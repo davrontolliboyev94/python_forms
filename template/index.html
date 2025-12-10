@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yangiliklar saxifasi</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <a href="{% url 'create' %}"><button>Yangiliklar kiritish</button></a>
+    <h1>Dunyo yangiliklari</h1>
+
+    {% for x in news %}
+    <h2 id="new1">{{ x.title }}</h2>
+    <p class="newclass">{{ x.text }}</p>
+    <img src="{{ x.rasm.url }}" alt="rasm" width="25%">
+    {% endfor %}
+</body>
+</html>
