@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-{% load static %}    
+{% load static %}
+<img src="{% static 'images/6-rasm.jpg' %}">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,3 +20,86 @@
     {% endfor %}
 </body>
 </html>
+ <form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" value="Davron"><br><br>
+  <input type="submit" value="Submit">
+</form>  <video width="320" height="240" autoplay muted>
+  <source src="static/images/6-rasm.jpg
+" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video> 
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h4 id="myHeader">My Header</h4>
+
+<style>
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+</style>
+</head>
+<body>
+
+<h2>Difference Between Class and ID</h2>
+<p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+
+<!-- An element with a unique id -->
+<h1 id="myHeader">Mening shahrim</h1>
+
+<!-- Multiple elements with same class -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<h2 class="city">Toshkent</h2>
+<p>Toshkent is the capital of Uzbekistan</p>
+
+
+<style>
+div {
+  background-color:aliceblue
+}
+</style>
+<body>
+
+<h1>HTML DIV Example</h1>
+
+<div>
+  <h2>Toshkent</h2>
+  <p>Toshkent is the capital city of Uzbekistan.</p>
+  <p>Toshkent has over 3,1 million inhabitants.</p>
+  <p>Here is the population of Tashkent</p>
+</div>
+
+<h1>Sized Emojis</h1>
+
+<p style="font-size:48px">
+&#128512; &#128516; &#128525; &#128151;
+</p>
